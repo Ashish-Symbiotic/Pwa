@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>
+            This is our First Pwa Page
+        </title>
+    </head>
+    <body>
+        <script>
+            if('serviceWorker' in navigator)
+            {
+                navigator.serviceWorker.register('/sw.js').then((resp)=>
+                {
+                    console.warn("res",resp);
+                }).catch((e)=>{
+                    console.error(e);
+                })
+            }
+            else
+            {
+                console.error("SW not working");
+            }
+        </script>
+    </body>
+</html>
