@@ -10,7 +10,7 @@
             {
                 navigator.serviceWorker.register('/sw.js').then((resp)=>
                 {
-                    console.warn("res",resp);
+                    console.log("res",resp);
                 }).catch((e)=>{
                     console.error(e);
                 })
