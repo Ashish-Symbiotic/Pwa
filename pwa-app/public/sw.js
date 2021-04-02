@@ -1,1 +1,1 @@
-console.warn("sw From public folder");
+console.log("sw From public folder");
